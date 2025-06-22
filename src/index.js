@@ -50,4 +50,6 @@ app.get("/claremont",async (req,res)=>{
 //     console.log("Connected to port 8000");
 // });
 
-modules.export=app;
+module.exports = (req, res) => {
+    app(req, res);
+  };
