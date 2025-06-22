@@ -1,5 +1,6 @@
 const express=require("express");
-const cors=require("cors")
+const cors=require("cors");
+const { builtinModules } = require("module");
 const app=express()
 app.use(cors())
 
@@ -48,3 +49,5 @@ app.get("/claremont",async (req,res)=>{
 // app.listen("8000", () => {
 //     console.log("Connected to port 8000");
 // });
+
+modules.export=app;
